@@ -1,5 +1,5 @@
 {
-    "name": "chakra-datepicker",
+    "name": "@orange_digital/chakra-datepicker",
     "version": "1.0.0",
     "description": "A datepicker written for chakra-ui with chakra-ui",
     "main": "./dist/index.js",
