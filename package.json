@@ -16,8 +16,21 @@
         "date",
         "datetime"
     ],
+    "contributors": [
+        {
+            "email": "bpofficial@icloud.com",
+            "name": "Brayden Phillips"
+        },
+        {
+            "name": "Daniel Keefer"
+        }
+    ],
     "author": "Orange Digital",
     "license": "ISC",
+    "repository": {
+        "url": "https://github.com/OrangeDigitalAustralia/chakra-datepicker",
+        "type": "git"
+    },
     "devDependencies": {
         "@babel/core": "^7.15.5",
         "@babel/plugin-syntax-jsx": "^7.14.5",
