@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "module": "commonjs",
+        "declaration": true,
+        "declarationDir": "dist",
+        "target": "es5",
+        "lib": ["es6", "dom"],
+        "sourceMap": false,
+        "allowJs": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts"
+    ]
+}
