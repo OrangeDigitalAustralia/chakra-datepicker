@@ -3,4 +3,5 @@ export interface DatePickerProps {
     triggerButtonText?: string;
     time?: boolean;
     initialValue?: Date;
+    onDateChange?: (date: Date | null) => void;
 }
