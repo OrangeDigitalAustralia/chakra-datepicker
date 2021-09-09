@@ -3,6 +3,7 @@ CONTRIBUTING.md
 LICENSE
 src
 
+.github
 .eslintignore
 .eslint.js
 *.log
