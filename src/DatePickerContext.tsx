@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 type StateType<T> = [T, React.Dispatch<React.SetStateAction<T>>];
 type ContextType = {
@@ -21,14 +21,20 @@ interface Props {
 
 export const DatePickerProvider: React.FC<Props> = ({
     time: isTime,
-    initialValue = null,
+    initialValue = new Date(),
     children,
 }) => {
+    const init = new Date(
+        initialValue?.getFullYear(),
+        initialValue?.getMonth(),
+        initialValue?.getDate()
+    );
+
     // Stored as the JS date object
-    const date = useState<Date | null>(initialValue);
+    const date = useState<Date | null>(init);
 
     // Currently selected date
-    const selectedDate = useState<Date | null>(initialValue);
+    const selectedDate = useState<Date | null>(init);
 
     // Selecting the year & month rather than the day
     const selectingYear = useState(false);
