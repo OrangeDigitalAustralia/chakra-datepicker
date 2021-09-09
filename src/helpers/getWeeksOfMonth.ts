@@ -1,4 +1,4 @@
-export function getDaysOfMonth(input: Date): Date[][] {
+export function getWeeksOfMonth(input: Date): Date[][] {
     const date = new Date(input);
     const year = date.getFullYear();
     const month = date.getMonth();
