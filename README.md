@@ -1,6 +1,6 @@
 # chakra-datepicker
 
-A very lightweight (3.99kb unpacked) datepicker for React & Chakra-UI
+A lightweight datepicker for React & Chakra-UI
 
 ## Installation
 ```bash
