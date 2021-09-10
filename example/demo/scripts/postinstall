@@ -1,0 +1,10 @@
+tmpfolder=$(mktemp -d)
+
+cd ../..
+npm run build
+cp -r dist $tmpfolder/dist
+cp package.json $tmpfolder
+cp tsconfig.json $tmpfolder
+
+cd example/demo
+npm link $tmpfolder
