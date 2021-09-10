@@ -2,9 +2,9 @@ CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 LICENSE
 src
+test
 
 .github
 .eslintignore
 .eslint.js
 *.log
-
