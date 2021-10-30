@@ -7,7 +7,7 @@ import {
     PopoverTrigger,
     usePopover,
 } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { DatePickerContent } from './components/DatePickerContent';
 import { DatePickerHeader } from './components/DatePickerHeader';
 import { useDatePicker } from './DatePickerContext';
@@ -25,6 +25,10 @@ export const DatePickerContainer: React.FC<DatePickerProps> = (props) => {
     const onChange = () => {
         props.onDateChange?.(date);
     };
+
+    useEffect(() => {
+        onChange()
+    }, [date]);
 
     return (
         <>
